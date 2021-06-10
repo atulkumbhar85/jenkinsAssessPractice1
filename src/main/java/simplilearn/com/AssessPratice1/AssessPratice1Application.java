@@ -16,6 +16,6 @@ public class AssessPratice1Application {
 	}
 	@GetMapping("/")
 	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
-		return String.format("<h1>Hello %s!</h1>", name);
+		return String.format("<h1>Hello %s!</h1> <h2>This is sample header</h2>", name);
 	}
 }
